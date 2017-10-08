@@ -1,0 +1,24 @@
+---
+layout: default
+---
+<article class="post">
+    <header>
+        <h1>{{ page.title }}</h1>
+        <h1><img src="{{ page.image_path }}" alt="page.title" /></h1>
+        <h2 class="headline">{{ page.date | date:"%m.%d.%y" }}</h2> <!-- strftime date -->
+    </header>
+    <section id="post-body">
+        {{content}}
+    </section>
+</article>
+<!--
+<div class="piece">
+  <h2><img src="{{ page.image_path }}" alt="page.title" />{{ page.title }}</h2>
+
+  <div class="blog-post spacing">
+    {{ content }}
+  </div>
+</div>
+-->
+
+{% include footer.html %}

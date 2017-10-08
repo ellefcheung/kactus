@@ -12,11 +12,14 @@
   <link rel="stylesheet" href="{{ "/" | relative_url  }}assets/css/highlight.css">
 </head>
 <body>
-
   {% include navigation.html %}
-
+    
   {% if page.profile %}
       {% include profile.html %}
+  {% endif %}
+    
+  {% if page.profile-small %}
+      {% include profile-small.html %}
   {% endif %}
 
   <section id="wrapper" class="{% if page.profile %}home{% endif %}">
@@ -39,6 +42,8 @@
   </script>
 </body>
 </html>
+
+{% include footer.html %}
 
 
 

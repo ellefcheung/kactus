@@ -1,12 +1,37 @@
 <ul id="post-list">
-    {% for post in paginator.posts %}
+    {% for post in site.posts %}
         <li>
-            <a href="{{ "/" | relative_url  }}{{ post.url | remove_first: '/' }}"><aside class="dates">{{ post.date | date:"%b %d" }}</aside></a>
-            <a href="{{ "/" | relative_url  }}{{ post.url | remove_first: '/' }}">{{ post.title }} <h2>{{ post.description }}</h2></a>
+            <a href="{{ "/" | relative_url  }}{{ post.url | remove_first: '/' }}">
+                <aside class="dates">{{ post.date | date:"%m.%d.%y" }}</aside>
+            </a>
+            <a href="{{ "/" | relative_url  }}{{ post.url | remove_first: '/' }}">
+                <aside class="titles">{{ post.title }}</aside>
+            </a>
+            <h2>
+                <ul>
+                  {% for bullet in post.bullets %}
+                  <li>{{bullet}}</li>
+                  {% endfor %}
+                </ul>
+            </h2>
+            
+<!--
+            <header>
+                <h1>{{ post.title }}</h1>
+                <h2 class="headline">{{ post.date | date:"%m.%d.%y" }}</h2>
+            </header>
+                {{post.content}}
+-->
+<!--
+            <a href="{{ "/" | relative_url  }}{{ post.url | remove_first: '/' }}"><aside class="dates">{{ post.date | date:"%B %Y" }}</aside></a>
+            <a href="{{ "/" | relative_url  }}{{ post.url | remove_first: '/' }}">{{ post.title }} <section id="post-body"> {{post.content}} </section></a>
+            <h2>{{ post.content }}</h2>
+-->
         </li>
     {% endfor %}
 </ul>
 
+<!--
 {% if paginator.previous_page or paginator.next_page %}
     {% include pagination.html %}
-{% endif %}
+{% endif %}-->

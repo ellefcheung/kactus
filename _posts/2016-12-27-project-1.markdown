@@ -1,0 +1,10 @@
+---
+title:  "Project 1"
+date:   2016-12-27 10:18:00
+bullets:
+    - point 1
+    - point 2
+    - point 3
+---
+
+why does this not work ;-;

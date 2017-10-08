@@ -1,0 +1,8 @@
+{% assign sorted_pieces = site.portfolio | sort: "weight" | reverse %}
+<ul id="post-list">
+  {% for image in sorted_pieces %}
+    <li><a href="{{ image.url }}">
+        <img src="{{ image.image_path }}" alt="{{ image.title}}"/>
+    </a></li>
+  {% endfor %}
+</ul>

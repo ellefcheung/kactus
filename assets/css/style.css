@@ -43,7 +43,7 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 .icon-facebook-rect:before { content: '\e803'; }
 
 /* Spacing */
-.post h1, h3, h4, h5, p, .post-body ul, #post-list li, pre {
+.post h1, h3, h4, h5, p, .post-body ul, #post-list > li, pre {
 margin-bottom: 20px;
 }
 
@@ -141,7 +141,7 @@ nav.main-nav a.cta {
 #wrapper {
   max-width: 600px;
   margin: 0 auto;
-  padding: 60px 40px 100px 40px;
+  padding: 0px 40px 100px 40px;
 }
 
 #wrapper.home {
@@ -163,6 +163,7 @@ a,
 #title,
 #post-list a:hover,
 #post-list li:hover .dates,
+#post-list li:hover .titles,
 #title:hover {
 	text-decoration: none;
 	color: #5badf0;
@@ -182,8 +183,8 @@ a,
 	transition: all 0.15s ease;
 }
 
-ul 	{ margin:0; padding:0; }
-li	{ list-style-type:circle; list-style-position:inside; }
+ul 	{ margin:0; padding:5px; }
+li	{ list-style-type:circle; list-style-position:inside; padding-bottom: 5px }
 
 /* Line Height */
 #post-body, p { line-height:1.7; }
@@ -210,15 +211,18 @@ em, i { font-style: italic; }
 
 
 .home h1 {
-	font-size: 30px;
-	letter-spacing: -1px;
+    font-weight: 400;
+	letter-spacing: 0px;
+	font-size: 20px;
 	color: #222;
-	font-weight: bold;
+    width: 50%;
+    padding-bottom: 10px;
 }
 
 .home h2 {
 	font: italic 19px/1.3em Georgia,serif;
 	color: #bbb;
+    padding-bottom: 5px;
 }
 
 .post header {
@@ -228,8 +232,8 @@ em, i { font-style: italic; }
 
 .post h1 {
 	margin-bottom: 20px;
-	color: #222;
-	font: 300 32px/1.4em "Helvetica Neue", Helvetica,Arial,sans-serif;
+    font: normal 24px/1.5em "Helvetica Neue",Helvetica,Arial,sans-serif;
+    color: #505050;
 }
 
 .post h2 {
@@ -371,18 +375,18 @@ img {
 Post List
 =========================================== */
 #post-list,#archive-list {
-	margin-top: 100px;
+	margin-top: 0px;
 }
 
-#post-list li,#archive-list li {
+#post-list > li,#archive-list > li {
 	list-style-type: none;
 }
 
-#post-list li:last-child {
+#post-list > li:last-child {
 	margin-bottom: 0;
 }
 
-#post-list li+li {
+#post-list > li+li {
 	padding-top: 20px;
 	border-top: 1px solid #eee;
 }
@@ -397,7 +401,7 @@ Post List
 	float: right;
 	position: relative;
 	top: 1px;
-	font: 300 17px/1.8 "Helvetica Neue",helvetica,Arial,sans-serif;
+    font: normal 15px/1.5em "Helvetica Neue",Helvetica,Arial,sans-serif;
 	color: #bbb;
 }
 
@@ -555,7 +559,7 @@ h2.month {
 	border-bottom: 1px solid #eee;
 }
 
-#archive-list li:last-child {
+#archive-list > li:last-child {
 	margin-bottom: 0;
 }
 
@@ -575,16 +579,6 @@ h2.month {
 
 #archive-list li a:hover,#archive-list li:hover .dates {
 	color: #5694f1;
-}
-
-#post-meta img.avatar {
-  height: 36px;
-  width: 36px;
-  float: left;
-  border-radius: 50%;
-  margin-top: 3px;
-  margin-right: 20px;
-  box-shadow: 0 0 0 3px #fff, 0 0 0 4px #eee;
 }
 
 #post-list.archive.readmore h3{
@@ -639,6 +633,85 @@ h2.month {
 
 	h1 { font-size: 26px; }
 	.post h2.headline { font-size: 13px; }
-	.post h1 { font-size:24px; }
+	.post h1 {
+        top: 1px;
+        font: normal 24px/1.5em "Helvetica Neue",Helvetica,Arial,sans-serif;
+        color: #505050;
+    }
 	.post h2 { font-size:20px; }
+}
+#post-list .titles {
+    top: 1px;
+    margin-bottom: 20px;
+    font: normal 17px/1.5em "Helvetica Neue",Helvetica,Arial,sans-serif;
+	color: #505050;
+}
+
+
+
+.profile-small #wrapper {
+	padding: 50px 40px 0px;
+	max-width: 600px;
+	margin: 0 auto;
+    align-content: space-evenly;
+}
+
+.profile-small #header {
+	border-bottom: 1px solid #eee;
+	margin-bottom: 40px;
+	padding-bottom: 40px;
+	text-align: unset;
+	position: relative;
+}
+
+.profile-small h1 {
+	font-weight: 400;
+	letter-spacing: 0px;
+	font-size: 20px;
+	color: #222;
+    width: 50%;
+    text-align: left;
+}
+
+
+
+#post-meta img.avatar {
+  height: 36px;
+  width: 36px;
+  border-radius: 50%;
+  margin-top: 3px;
+  margin-right: 20px;
+  box-shadow: 0 0 0 3px #fff, 0 0 0 4px #eee;
+}
+
+.profile-small #avatar {
+	display: inline-block;
+    vertical-align: middle;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+    float: right;
+}
+
+
+
+
+
+
+
+
+
+nav.main-nav a:hover {
+    color: rebeccapurple;
+    text-decoration: underline;
+}
+
+
+
+.profile-small p {
+    padding-top: 5px
+}
+
+.profile-small td {
+    vertical-align: text-bottom;
 }

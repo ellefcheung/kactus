@@ -1,23 +1,26 @@
-name: Your New Jekyll Site
-description: Blogging about stuffs
+name: Elle Cheung
+description: UC Berkeley - EECS
 meta_description: "Your New Jekyll Site, Blogging about stuffs"
 
-aboutPage: true
+contactPage: true
 
 markdown: kramdown
 highlighter: rouge
 
-plugins: [jekyll-paginate]
-paginate: 20
+#plugins: [jekyll-paginate]
+# paginate: 20
 domain_name: 'http://yourblog-domain.com'
 google_analytics: 'UA-XXXXXXXX-X'
 disqus: false
-disqus_shortname: 'your-disqus-shortname'
+
+# for art portfolio
+collections:
+    portfolio:
+        output: true
 
 # Details for the RSS feed generator
 url:            'http://your-blog-url.example.com'
-author:         'Your Name'
-authorTwitter:  'YourTwitterUsername'
+author:         'Elle Cheung'
 
 permalink:       /:year/:title/
 
@@ -25,7 +28,7 @@ defaults:
     -
         scope:
             path: "" # empty string for all files
-            type: pages
+        ruby    type: pages
         values:
             layout: default
     -
