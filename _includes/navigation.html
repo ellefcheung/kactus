@@ -52,6 +52,10 @@
         <a href="{{ "/" | relative_url  }}portfolio">Portfolio</a>
     {% endif %}
     
+    {% if page.url != "/resume/" %}
+        <a href="https://drive.google.com/file/d/0B1IvGQYVIJ-vUk5zSzFyRkRZOWc/view?usp=sharing" target="_blank">Resume</a>
+    {% endif %}
+    
     {% if page.url != "/contact/" %}
         <a href="{{ "/" | relative_url  }}contact">Contact</a>
     {% endif %}

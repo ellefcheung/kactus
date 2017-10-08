@@ -43,7 +43,7 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 .icon-facebook-rect:before { content: '\e803'; }
 
 /* Spacing */
-.post h1, h3, h4, h5, p, .post-body ul, #post-list > li, pre {
+.post h1, h3, h4, h5, p, .post-body ul, pre {
 margin-bottom: 20px;
 }
 
@@ -256,10 +256,10 @@ em, i { font-style: italic; }
 }
 
 #post-list h2 {
-	font: normal 17px/1.5em "Helvetica Neue",Helvetica,Arial,sans-serif;
+	font: normal 15px/1.5em "Helvetica Neue",Helvetica,Arial,sans-serif;
 	color: #aaa;
 	max-width: 400px;
-	margin-top: 2px;
+	margin-top: 0px;
 }
 
 h3, h4, h5 { color:#333; }
@@ -324,7 +324,7 @@ table {
 }
 
 th,td {
-	text-align: left;
+	text-align: center;
 	padding-right: 20px;
 	vertical-align: top;
 }

@@ -1,15 +1,10 @@
 ---
-title: Contact
+title: Elle Cheung
 permalink: contact/
-profile: true
-description: description
+profile-small: true
+description: Contact Information
 ---
-Contact Info
-=========
-
-- Email: [ellefcheung@berkeley.edu][4]
-- Phone: (310)-291-7797
-
+Please email me at [ellefcheung@berkeley.edu][4].
 
 [LinkedIn][1] | [GitHub][2] | [Devpost][3]
 
