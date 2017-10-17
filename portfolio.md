@@ -2,7 +2,7 @@
 title: Portfolio
 permalink: portfolio/
 profile-small: true
-description: Traditional, Digital, Design
+description: (currently editing) Traditional, Digital, Design
 ---
 {% include portfolio-grid.html %}
 {% include footer.html %}
