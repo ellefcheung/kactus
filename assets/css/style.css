@@ -85,9 +85,9 @@ h2 {
 
 .profile #avatar {
 	display: inline-block;
-	width: 80px;
-	height: 80px;
-	border-radius: 50%;
+	width: 100px;
+	height: 100px;
+/*	border-radius: 50%;*/
 	margin-bottom: 20px;
 }
 
@@ -154,7 +154,7 @@ nav.main-nav a.cta {
 	float: right;
 	width: 40px;
 	height: 40px;
-	border-radius: 50%;
+/*	border-radius: 50%;*/
 }
 
 /* Typography */
@@ -359,7 +359,7 @@ thead th,th {
 img {
 	width: 100%;
 	max-width: 100%;
-	border-radius: 3px;
+/*	border-radius: 3px;*/
 }
 
 /* Made with Cactus Badge */
@@ -676,9 +676,9 @@ h2.month {
 
 
 #post-meta img.avatar {
-  height: 36px;
-  width: 36px;
-  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+/*  border-radius: 50%;*/
   margin-top: 3px;
   margin-right: 20px;
   box-shadow: 0 0 0 3px #fff, 0 0 0 4px #eee;
@@ -689,7 +689,7 @@ h2.month {
     vertical-align: middle;
 	width: 50px;
 	height: 50px;
-	border-radius: 50%;
+/*	border-radius: 50%;*/
     float: right;
 }
 
